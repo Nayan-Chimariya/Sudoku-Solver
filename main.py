@@ -1,3 +1,4 @@
+import numpy as np
 
 grid = [[4, 0, 0, 0, 0, 5, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 1, 9, 8],
@@ -39,7 +40,8 @@ def solve():
                       solve()
                       grid[i][j] = 0
               return
-  print(grid)
+              
+  print(np.matrix(grid))
   return
 
 def main():
